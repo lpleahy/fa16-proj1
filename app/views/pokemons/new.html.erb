@@ -1,0 +1,9 @@
+<center>
+<h2 style = "color: blue"> <u> Name your Pokemon. </u> </h2>
+</center>
+<%= simple_form_for @pokemon, :url => url_for(:action => 'create', :controller => 'pokemons'), :method => 'post' do |p| %>
+	<%= p.input :name %>
+	<center>
+	<%= p.button :submit %>
+	</center>
+<% end %>
